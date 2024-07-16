@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball</title>
+</head>
+    
+<body>
+    <div>
+        <h1>Magic 8 Ball</h1>
+    </div>
+   <div>
+        <form action="{{8ball}}" method="POST">
+
+            <label for="firstname">First Name</label><br>
+            <input required type="text" id="firstname" name="fname" value=""><br>
+            <label for="lastname">Last Name</label><br>
+            <input required type="text" id="lastname" value=""><br>
+            <label for="email">Email</label><br>
+            <input required type="email" id="email" name="email"><br>
+
+            <input type="radio" id="dont" name="subscribe">
+            <label for="subscribe">Subscribe?</label><br>
+
+            <input type="radio" id="subscribe" name="subscribe">
+            <label for="don't">Don't Subscribe</label><br>
+
+            <input type="submit">
+        </form>
+   </div>
+
+   <div popover id="ad">
+       <img src=""
+       width="300px" height="300px">
+       <h1>Buy Now!!!!</h1>
+       <h1>Buy Now!!!!</h1>
+       <h1>Buy Now!!!!</h1>
+       <h1>Buy Now!!!!</h1>
+    </div>
+    <button popovertarget="ad">Click Me For More Information!</button>
+
+</body>
+</html>
